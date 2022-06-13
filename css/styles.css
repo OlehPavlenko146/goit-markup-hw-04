@@ -193,6 +193,10 @@ body {
   padding: 94px 0;
 }
 
+.section.our-activity {
+  padding: 0 0 94px 0;
+}
+
 .advantages {
   display: flex;
 }
@@ -252,10 +256,6 @@ body {
   fill: #afb1b8;
 }
 
-.soc-link:hover,
-.soc-link:focus {
-  background-color: var(--accent-color);
-}
 .soc-link:hover .icon-soc,
 .soc-link:focus .icon-soc {
   fill: #ffffff;
@@ -324,9 +324,6 @@ img {
 
 .team {
   display: flex;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--secondary-backrground-color);
 }
 
@@ -488,7 +485,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 60px 0;
-  max-width: 1600px;
   background-color: #2f303a;
 }
 
@@ -526,16 +522,22 @@ img {
   margin-top: 20px;
 }
 
+.footer-soc .soc-link {
+  color: var(--primary-background-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--accent-color);
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.footer-soc .soc-link {
-  color: var(--primary-background-color);
 }
 
 .footer-soc .soc-link .icon-soc {
@@ -629,4 +631,8 @@ img {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-link {
+  text-decoration: none;
 }
